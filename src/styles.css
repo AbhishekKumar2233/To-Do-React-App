@@ -1,4 +1,35 @@
+* {
+  background-color: rgb(250, 250, 66);
+}
+
 .App {
+  width: 300px;
+  min-height: 500px;
+  height: auto;
+  margin: auto;
+  padding: 10px;
   font-family: sans-serif;
   text-align: center;
+  background-color: lightyellow;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #000;
+}
+.App h1 {
+  background-color: lightyellow;
+}
+.App input {
+  padding: 5px;
+  border: 2px solid black;
+  background-color: lightyellow;
+}
+.App button {
+  padding: 5px 10px;
+  border: 2px solid black;
+  background-color: rgb(247, 235, 35);
+}
+.App ol {
+  background-color: lightyellow;
+}
+.App ol li {
+  background-color: lightyellow;
 }

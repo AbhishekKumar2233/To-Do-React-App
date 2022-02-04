@@ -27,6 +27,7 @@ export default function App() {
         placeholder="Add To Do"
       />
       <button onClick={addItem}>Add</button>
+
       <ol>
         {items.map((todos) => {
           return <li>{todos}</li>;
