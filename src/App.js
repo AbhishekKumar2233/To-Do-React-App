@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Inputarea from "./components/Inputarea";
 import Items from "./components/Items";
 import "./styles.css";
 
@@ -29,13 +30,18 @@ export default function App() {
   return (
     <div className="App">
       <h1>To-Do List</h1>
-      <input
+      {/* <input
         onChange={handleText}
         type="text"
         value={inputText}
         placeholder="Add To Do"
       />
-      <button onClick={addItem}>Add</button>
+      <button onClick={addItem}>Add</button> */}
+      <Inputarea
+        handleText={handleText}
+        inputText={inputText}
+        addItem={addItem}
+      />
 
       <ol>
         {items.map((todos, index) => {

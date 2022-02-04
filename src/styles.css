@@ -10,42 +10,53 @@
   padding: 10px;
   font-family: sans-serif;
   text-align: center;
-  background-color: lightyellow;
+  background-color: #fff;
   border-radius: 20px;
   box-shadow: 3px 3px 10px #000;
 }
 .App h1 {
-  background-color: lightyellow;
+  background-color: #fff;
 }
-.App input {
-  padding: 5px;
+.form{
+  background-color: #fff;
+}
+.form input {
+  padding: 8px;
   border: 2px solid black;
-  background-color: lightyellow;
+  background-color: #fff;
+  border-radius: 10px 0px 0px 0px;
 }
-.App button {
-  padding: 5px 10px;
+.form button {
+  padding: 8px 10px;
+  color:#fff;
+  font-weight: bolder;
   border: 2px solid black;
-  background-color: rgb(247, 235, 35);
+  background-color: #000;
+  cursor: pointer;
+  border-radius: 0px 0px 10px 0px;
 }
+
 .App ol {
   margin: 20px 15px;
-  background-color: lightyellow;
+  background-color: #fff;
 }
 .App ol li {
   padding-top: 10px;
-  background-color: lightyellow;
+  background-color: #fff;
   text-align: left;
 }
 .items {
   display: flex;
-  background-color: lightyellow;
+  background-color: #fff;
 }
 .items button {
   position: absolute;
   margin-left: 180px;
+  padding-top:10px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+
 }
 .items button svg {
   border-radius: 25px;
@@ -60,4 +71,5 @@
 
 .items button svg:hover {
   background-color: red;
+  S
 }
