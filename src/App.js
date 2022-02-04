@@ -18,6 +18,14 @@ export default function App() {
     setinputTest("");
   }
 
+  function deleteItem(id) {
+    setItems((prevItem) => {
+      return prevItem.filter((item, index) => {
+        return index !== id;
+      });
+    });
+  }
+
   return (
     <div className="App">
       <h1>To-Do List</h1>
@@ -30,8 +38,10 @@ export default function App() {
       <button onClick={addItem}>Add</button>
 
       <ol>
-        {items.map((todos) => {
-          return <Items text={todos} />;
+        {items.map((todos, index) => {
+          return (
+            <Items key={index} id={index} text={todos} onChecked={deleteItem} />
+          );
         })}
       </ol>
     </div>
