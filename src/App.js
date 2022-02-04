@@ -4,19 +4,19 @@ import Items from "./components/Items";
 import "./styles.css";
 
 export default function App() {
-  const [inputText, setinputTest] = useState("");
+  const [inputText, setinputText] = useState("");
   const [items, setItems] = useState([]);
 
   function handleText(event) {
     const text = event.target.value;
-    setinputTest(text);
+    setinputText(text);
   }
 
   function addItem() {
     setItems((prevItem) => {
       return [...prevItem, inputText];
     });
-    setinputTest("");
+    setinputText("");
   }
 
   function deleteItem(id) {
