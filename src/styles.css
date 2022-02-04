@@ -36,3 +36,28 @@
   background-color: lightyellow;
   text-align: left;
 }
+.items {
+  display: flex;
+  background-color: lightyellow;
+}
+.items button {
+  position: absolute;
+  margin-left: 180px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.items button svg {
+  border-radius: 25px;
+  border: 2px solid red;
+  background: transparent;
+}
+
+.items button svg g:hover {
+  background-color: red;
+  fill: #fff;
+}
+
+.items button svg:hover {
+  background-color: red;
+}
