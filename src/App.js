@@ -3,12 +3,19 @@ import "./styles.css";
 
 export default function App() {
   const [inputText, setinputTest] = useState("");
+  const [items, setItems] = useState([]);
 
   function handleText(event) {
     const text = event.target.value;
     setinputTest(text);
   }
 
+  function addItem() {
+    setItems((prevItem) => {
+      return [...prevItem, inputText];
+    });
+    setinputTest("");
+  }
   return (
     <div className="App">
       <h1>To-Do List</h1>
@@ -18,9 +25,11 @@ export default function App() {
         value={inputText}
         placeholder="Add To Do"
       />
-      <button>Add</button>
+      <button onClick={addItem}>Add</button>
       <ol>
-        <li>{inputText}</li>
+        {items.map((todos) => {
+          return <li>{todos}</li>;
+        })}
       </ol>
     </div>
   );
