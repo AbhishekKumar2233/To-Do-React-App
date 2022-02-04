@@ -28,8 +28,11 @@
   background-color: rgb(247, 235, 35);
 }
 .App ol {
+  margin: 20px 15px;
   background-color: lightyellow;
 }
 .App ol li {
+  padding-top: 10px;
   background-color: lightyellow;
+  text-align: left;
 }

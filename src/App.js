@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Items from "./components/Items";
 import "./styles.css";
 
 export default function App() {
@@ -30,7 +31,7 @@ export default function App() {
 
       <ol>
         {items.map((todos) => {
-          return <li>{todos}</li>;
+          return <Items text={todos} />;
         })}
       </ol>
     </div>
