@@ -62,8 +62,10 @@
   border: 2px solid red;
   background: transparent;
 }
-
+/*  */
 .items button svg:hover g {
-  background-color: red;
   fill: #fff;
+}
+.items button svg:hover {
+  background-color: red;
 }
